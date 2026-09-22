@@ -1,0 +1,14 @@
+# NAME: Meta Muse (Muse Spark / Muse Image / Muse Voice / Muse Code)
+# 来源: https://ai.developer.meta.com/docs/ 与实机 DNS 探测 (2026-09-22)
+# 类型: DOMAIN-SET（仅域名，不触发 DNS 解析，排在 IP 规则之前）
+# 策略: 由引用本文件的规则行指定（🤖AI）
+
+# Meta Model API base: api.meta.ai / dev.meta.ai / www.meta.ai (wss://api.meta.ai/v1/asr/realtime 同域)
++.meta.ai
+
+# Meta AI 开发者文档与控制台 (Muse 模型页、API reference)
+ai.developer.meta.com
+
+# Meta AI 官方博客 / Llama&Muse 开发者站
+ai.meta.com
++.llama.com
