@@ -16,3 +16,7 @@
 
 # Muse 主站与 App 网页层 (2026-09-08 仅美/加上线; 漏收录曾落 FINAL→香港出口被地区拦截)
 .muse.ai
+
+# Meta Graph API (Muse App 资格/会话校验: ar.graph.meta.com / meta.graph.meta.com)
+# 曾被 conf 的 DOMAIN-SUFFIX,meta.com(global.conf) → AutoTest(香港)，与美区出口混合导致资格拒绝
+.graph.meta.com
