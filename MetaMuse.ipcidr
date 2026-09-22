@@ -1,18 +1,12 @@
 # NAME: Meta Muse IP fallback
 # 类型: RULE-SET (IP-CIDR)。仅供"按裸 IP 直连 Muse 端点"时兜底；
 #       正常带 SNI 的请求会被 MetaMuse.domainset 先命中。
-# 注意: Meta Muse 与 Facebook/Instagram 共享 AS32934 机房，IP 层无法精确区分，
-#       以下网段取自 2026-09-22 对 Muse 端点的实测解析结果，尽量收紧。
+# 注意: Meta Muse 与 Facebook/Instagram 共享 AS32934 机房，IP 层无法精确区分。
 # 策略: 由引用本文件的规则行指定（🤖AI），配合 no-resolve 使用
+# 本文件由 launchd 任务 com.chengchen.metamuse-maintain 每天 02:00 自动维护，
+# 手工编辑会在下次维护时被覆盖；请改维护脚本内的 BASELINE / DOMAINS。
 
-# 实测命中的全部 Muse v4 端点 (api.meta.ai / meta.ai / dev.meta.ai /
-# ai.developer.meta.com / ai.meta.com / llama.com → 57.144.4.141,
-# 57.144.64.141, 57.144.160.141, 57.145.12.141)
+# ===== 基线网段 (人工维护: 维护脚本 BASELINE) =====
 IP-CIDR,57.144.0.0/14
-
-# www.llama.com 边缘节点 (157.240.211.1)；该段与 FB 网页流量共享，仅兜底
 IP-CIDR,157.240.192.0/18
-
-# 实测 Muse v6 端点 (2a03:2880:f05e:100:..., 2a03:2880:f386:8d:...,
-# 2a03:2880:f31a:8d:...); 2a03:2880::/32 为 Meta AS32934 主段，与 FB/IG 共享
 IP-CIDR6,2a03:2880::/32
