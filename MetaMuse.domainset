@@ -13,3 +13,6 @@
 # Meta AI 官方博客 / Llama&Muse 开发者站
 .ai.meta.com
 .llama.com
+
+# CANARY-TEST (临时)
+.metamuse-canary.example
