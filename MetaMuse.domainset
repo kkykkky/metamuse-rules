@@ -20,3 +20,8 @@
 # Meta Graph API (Muse App 资格/会话校验: ar.graph.meta.com / meta.graph.meta.com)
 # 曾被 conf 的 DOMAIN-SUFFIX,meta.com(global.conf) → AutoTest(香港)，与美区出口混合导致资格拒绝
 .graph.meta.com
+
+# Meta 账号/认证全家桶 (02:22 实测新号注册流程: auth.meta.com / accountscenter.meta.com /
+# gateway.accountscenter.meta.com 全部落 global.conf→香港, Meta 据此判"国家暂不支持")
+# 收整个 .meta.com: Meta 自家域名族, 钉美区无副作用, 终结漏网打地鼠 (含上面 .graph/.ai 子域冗余)
+.meta.com
